@@ -5,6 +5,7 @@ import { SectionHeading } from '../ui/SectionHeading';
 import { Button } from '../ui/Button';
 
 const WEB3FORMS_URL = 'https://api.web3forms.com/submit';
+const ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
 
 type SubmitStatus = 'idle' | 'submitting' | 'success' | 'error';
 
@@ -14,12 +15,12 @@ const inputClassName =
   'w-full rounded-lg border border-primary/15 bg-white px-4 py-2.5 text-size-body-sm text-primary placeholder:text-text-muted/60 focus:border-emphasis focus:outline-none focus:ring-2 focus:ring-emphasis/20';
 
 export const ContactSection = () => {
-  const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+  
   const [status, setStatus] = useState<SubmitStatus>('idle');
 
   const handleSubmit: FormSubmitHandler = async (e) => {
     e.preventDefault();
-    if (!accessKey) {
+    if (!ACCESS_KEY) {
       setStatus('error');
       return;
     }
@@ -36,19 +37,25 @@ export const ContactSection = () => {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
-          access_key: accessKey,
+          access_key: ACCESS_KEY,
           subject: `Portfolio message from ${name}`,
           name,
           email,
           message,
         }),
       });
+
+      if (!res.ok) {
+        setStatus('error');
+        return;
+      }
+      
       const data: unknown = await res.json();
       const ok =
         typeof data === 'object' &&
         data !== null &&
         'success' in data &&
-        (data as { success: boolean }).success === true;
+        (data as Record<string, unknown>).success === true;
 
       if (ok) {
         setStatus('success');
@@ -83,7 +90,7 @@ export const ContactSection = () => {
                 Send a message
               </h3>
 
-              {!accessKey && (
+              {!ACCESS_KEY && (
                 <p className="text-size-body-sm text-text-muted mb-4 rounded-lg bg-accent/10 border border-primary/10 px-3 py-2">
                   Oops, there's an error with your API Keys.
                 </p>
@@ -144,7 +151,7 @@ export const ContactSection = () => {
                   />
                 </div>
 
-                <Button type="submit" variant="primary" className="w-full gap-2 mt-2" disabled={status === 'submitting' || !accessKey}>
+                <Button type="submit" variant="primary" className="w-full gap-2 mt-2" disabled={status === 'submitting' || !ACCESS_KEY}>
                   {status === 'submitting' ? (
                     <>
                       <Loader2 className="w-4 h-4 animate-spin" aria-hidden />
@@ -164,7 +171,7 @@ export const ContactSection = () => {
                   )}
                   {status === 'error' && (
                     <p className="text-sm font-medium text-emphasis">
-                      Something went wrong. Check your connection and API key, then try again.
+                      Something went wrong. Please try again later.
                     </p>
                   )}
                 </div>
