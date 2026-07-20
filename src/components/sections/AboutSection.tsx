@@ -7,7 +7,7 @@ export const AboutSection = () => {
       <div className="container-width">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <SectionHeading subtitle="Vancouver based • Frontend Driven • Type Safety enthusiast">
+            <SectionHeading subtitle="Vancouver based • Frontend-first • Expanding into full-stack">
               The Person Behind the Code
             </SectionHeading>
 
@@ -17,7 +17,8 @@ export const AboutSection = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
               >
-                I'm a Frontend Developer based in Vancouver with a focus on building clean, type-safe user interfaces. I believe that code quality and user experience go hand-in-hand.
+                I&apos;m a Vancouver-based developer with a frontend focus in React and TypeScript.
+                I care about clean, type-safe interfaces — and I&apos;m expanding into full-stack so I can own more of the path from UI to data.
               </motion.p>
 
               <motion.p
@@ -40,9 +41,8 @@ export const AboutSection = () => {
                 transition={{ delay: 0.2 }}
               >
                 I recently graduated from Langara College in Internet and Web Development.
-                While school gave me a solid grasp of Java and Linux,
-                my passion for the frontend led me to self-teach TypeScript and Tailwind CSS to
-                stay aligned with modern industry standards.
+                School gave me a foundation in Java and Linux; since then I&apos;ve been self-teaching modern tools
+                like Next.js, Convex, and AI assistants (Mastra / OpenRouter) to build fuller product experiences.
               </motion.p>
             </div>
           </div>
@@ -106,7 +106,7 @@ export const AboutSection = () => {
             <div className="absolute -bottom-6 -right-6 md:right-12 bg-white p-4 rounded-2xl shadow-xl border border-primary/5 mx-2">
               <div className="grid grid-cols-2 gap-6">
                 <div>
-                  <span className="block text-2xl font-bold text-primary">2+</span>
+                  <span className="block text-2xl font-bold text-primary">3+</span>
                   <span className="text-[10px] uppercase text-text-muted font-bold tracking-widest">Projects</span>
                 </div>
                 <div>

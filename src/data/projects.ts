@@ -23,12 +23,20 @@ export const projects: Project[] = [
   },
   {
     id: '3',
-    title: 'Coming Soon..',
-    descriptionWhy: 'Work in Progress..',
-    techStack: ['React', 'Tailwind CSS'],
-    liveDemoUrl: '',
-    repositoryUrl: 'https://github.com/saramar23/',
-    imageAlt: 'Coming Soon...',
-    imageSrc: '', 
-  }
+    title: 'PizzaTime',
+    descriptionWhy: 'Next.js pizza-ordering app with an AI assistant for menu + cart',
+    techStack: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'Convex',
+      'Mastra',
+      'OpenRouter',
+    ],
+    liveDemoUrl: 'https://pizzatime-liart.vercel.app/',
+    repositoryUrl: 'https://github.com/saramar23/pizzatime',
+    imageAlt: 'PizzaTime homepage with menu categories and AI chat assistant',
+    imageSrc: '/media/PizzaTime.png',
+  },
 ];

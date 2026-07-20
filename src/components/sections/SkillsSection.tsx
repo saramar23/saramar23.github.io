@@ -3,14 +3,18 @@ import { motion } from 'motion/react';
 import { powerStackSkills, supportingSkills } from '../../data/skills';
 import { SectionHeading } from '../ui/SectionHeading';
 import { Card } from '../ui/Card';
-import { Code2, Braces, Palette, Database, Layers } from 'lucide-react';
+import { Code2, Braces, Palette, Database, Layers, Server, Sparkles, Bot } from 'lucide-react';
 
 const iconMap: Record<string, ReactElement> = {
   'React': <Code2 className="w-6 h-6" aria-hidden />,
   'TypeScript': <Braces className="w-6 h-6" aria-hidden />,
-  'Tailwind CSS': <Palette className="w-6 h-6" aria-hidden />,
   'JavaScript': <Layers className="w-6 h-6" aria-hidden />,
   'HTML/CSS': <Layers className="w-6 h-6" aria-hidden />,
+  'Tailwind CSS': <Palette className="w-6 h-6" aria-hidden />,
+  'Next.js': <Layers className="w-6 h-6" aria-hidden />,
+  'Convex': <Server className="w-6 h-6" aria-hidden />,
+  'Mastra': <Bot className="w-6 h-6" aria-hidden />,
+  'OpenRouter': <Sparkles className="w-6 h-6" aria-hidden />,
   'Node.js': <Database className="w-6 h-6" aria-hidden />,
   'Java': <Code2 className="w-6 h-6" aria-hidden />,
   'MySQL': <Database className="w-6 h-6" aria-hidden />,

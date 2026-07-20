@@ -28,10 +28,10 @@ export const HeroSection = () => {
               </span>
               <h1 className="text-size-heading-xl text-primary leading-tight mb-6">
                 Hi, I&apos;m <span className="text-emphasis">Sara</span>.<br />
-                I build clean, <span className="italic text-secondary">type-safe</span> user interfaces.
+                I build clean, <span className="italic text-secondary">type-safe</span> web apps.
               </h1>
               <p className="text-text-muted text-size-body-lg mb-10 max-w-xl leading-relaxed">
-                A Vancouver-based Frontend Developer focused on crafting accessible, performant, and delightful web experiences using React and TypeScript.
+                Vancouver-based developer with a frontend focus in React and TypeScript, expanding into full-stack with tools like Next.js and Convex.
               </p>
             </motion.div>
 
