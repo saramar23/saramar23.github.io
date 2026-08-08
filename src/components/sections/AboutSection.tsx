@@ -7,7 +7,7 @@ export const AboutSection = () => {
       <div className="container-width">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <SectionHeading subtitle="Vancouver based • Frontend-first • Expanding into full-stack">
+            <SectionHeading>
               The Person Behind the Code
             </SectionHeading>
 
@@ -16,9 +16,9 @@ export const AboutSection = () => {
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
+                transition={{ delay: 0.2 }}
               >
-                I&apos;m a Vancouver-based developer with a frontend focus in React and TypeScript.
-                I care about clean, type-safe interfaces — and I&apos;m expanding into full-stack so I can own more of the path from UI to data.
+                <b>Computer Science</b> Certificate in Internet and Web Technology (Langara).
               </motion.p>
 
               <motion.p
@@ -29,20 +29,7 @@ export const AboutSection = () => {
                 className="bg-accent/30 border-l-4 border-emphasis p-6 pb-6 rounded-r-xl"
               >
                 <strong>The Pivot:</strong><br />
-                Before transitioning into tech, I spent years as a barista.
-                That experience was my &quot;soft-skills bootcamp&quot;, teaching me how to stay calm during a rush,
-                communicate clearly with a team, and solve problems for customers on the fly.
-              </motion.p>
-
-              <motion.p
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.2 }}
-              >
-                I recently graduated from Langara College in Internet and Web Development.
-                School gave me a foundation in Java and Linux; since then I&apos;ve been self-teaching modern tools
-                like Next.js, Convex, and AI assistants (Mastra / OpenRouter) to build fuller product experiences.
+                Career switch from hospitality. Two and a half years at an independent café: 150+ orders per weekend shift with one teammate, solo front-of-house on weekdays, and direct resolution of order errors and complaints during peak service.
               </motion.p>
             </div>
           </div>

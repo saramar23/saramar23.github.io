@@ -9,7 +9,7 @@ export const ToolsSection = () => {
     <section id="tools" className="section-padding bg-background">
       <div className="container-width">
         <SectionHeading centered subtitle="Software and tools I use on a daily basis to maintain workflow and quality.">
-          Daily Drivers
+          Tooling & Delivery
         </SectionHeading>
 
         <div className="flex flex-wrap justify-center gap-6">
@@ -22,8 +22,13 @@ export const ToolsSection = () => {
               transition={{ delay: index * 0.1 }}
             >
               <Card className="px-6 py-4 flex items-center gap-3 border shadow-none bg-white/40 border-primary/5 min-w-[140px] justify-center">
-                <Wrench className="w-4 h-4 text-emphasis" aria-hidden />
-                <span className="font-medium text-primary text-size-body-sm">{tool.name}</span>
+                <Wrench className="w-4 h-4 text-emphasis shrink-0" aria-hidden />
+                <span className="flex flex-col items-start">
+                  <span className="font-medium text-primary text-size-body-sm">{tool.name}</span>
+                  {tool.detail ? (
+                    <span className="text-xs text-text-muted leading-tight">{tool.detail}</span>
+                  ) : null}
+                </span>
               </Card>
             </motion.div>
           ))}

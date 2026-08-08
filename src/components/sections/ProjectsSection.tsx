@@ -35,7 +35,7 @@ export const ProjectsSection = () => {
                     <img
                       src={project.imageSrc}
                       alt={project.imageAlt}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="w-full h-full transition-transform duration-500 group-hover:scale-110"
                     />
                   ) :
                     (<div className="absolute inset-0 flex items-center justify-center text-primary/40 font-medium italic group-hover:opacity-100 transition-opacity bg-primary/10">

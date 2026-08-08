@@ -13,12 +13,13 @@ export interface Project {
 
 export interface Skill {
   name: string;
-  label?: 'Proficient' | 'Working Knowledge';
+  tool?: string;
   icon?: ReactNode;
 }
 
 export interface Tool {
   name: string;
+  detail?: string;
   icon?: ReactNode;
 }
 

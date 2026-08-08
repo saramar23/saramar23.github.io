@@ -1,9 +1,11 @@
 import { Tool } from '../types';
 
 export const tools: Tool[] = [
-  { name: 'Git' },
+  { name: 'GitHub' },
+  { name: 'CI/CD', detail: 'GitHub Actions' },
+  { name: 'npm' },
   { name: 'Vite' },
   { name: 'VS Code' },
-  { name: 'Cursor' },
   { name: 'Vercel' },
+  { name: 'Cursor' },
 ];

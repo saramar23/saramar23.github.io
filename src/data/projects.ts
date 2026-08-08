@@ -9,7 +9,7 @@ export const projects: Project[] = [
     liveDemoUrl: 'https://saramar23.github.io/news-app/',
     repositoryUrl: 'https://github.com/saramar23/news-app/',
     imageAlt: 'News discovery app with categories, search, and article reading view',
-    imageSrc: '/media/news-app-preview.png',
+    imageSrc: '/media/newsapp.webp',
   },
   {
     id: '2',
@@ -19,17 +19,19 @@ export const projects: Project[] = [
     liveDemoUrl: 'https://saramar23.github.io/reactcafe/',
     repositoryUrl: 'https://github.com/saramar23/reactcafe',
     imageAlt: 'Café-themed app showing menu navigation and cart drawer',
-    imageSrc: '/media/reactcafe-preview.png',
+    imageSrc: '/media/reactcafe.webp',
   },
   {
     id: '3',
     title: 'PizzaTime',
-    descriptionWhy: 'Next.js pizza-ordering app with an AI assistant for menu + cart',
+    descriptionWhy:
+      'Full-stack ordering app in Next.js and TypeScript. An LLM agent runs a three-step pipeline: plan the order from the chat message, validate items against the live NoSQL menu, then execute the cart update. The UI stays in sync with reactive queries.',
     techStack: [
       'Next.js',
       'React',
       'TypeScript',
       'Tailwind CSS',
+      'NoSQL',
       'Convex',
       'Mastra',
       'OpenRouter',
@@ -37,6 +39,6 @@ export const projects: Project[] = [
     liveDemoUrl: 'https://pizzatime-liart.vercel.app/',
     repositoryUrl: 'https://github.com/saramar23/pizzatime',
     imageAlt: 'PizzaTime homepage with menu categories and AI chat assistant',
-    imageSrc: '/media/PizzaTime.png',
+    imageSrc: '/media/pizzatime.webp',
   },
 ];

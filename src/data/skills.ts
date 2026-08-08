@@ -1,20 +1,17 @@
 import { Skill } from '../types';
 
 export const powerStackSkills: Skill[] = [
-  { name: 'React', label: 'Proficient' },
-  { name: 'TypeScript', label: 'Proficient' },
-  { name: 'JavaScript', label: 'Proficient' },
-  { name: 'HTML/CSS', label: 'Proficient' },
-  { name: 'Tailwind CSS', label: 'Proficient' },
-  { name: 'Next.js', label: 'Working Knowledge' },
-  { name: 'Convex', label: 'Working Knowledge' },
-  { name: 'Mastra', label: 'Working Knowledge' },
-  { name: 'OpenRouter', label: 'Working Knowledge' },
+  { name: 'React' },
+  { name: 'TypeScript' },
+  { name: 'JavaScript' },
+  { name: 'HTML/CSS' },
+  { name: 'Tailwind CSS' },
+  { name: 'Next.js' },
 ];
 
-export const supportingSkills: Skill[] = [
-  { name: 'Node.js', label: 'Working Knowledge' },
-  { name: 'Java', label: 'Working Knowledge' },
-  { name: 'MySQL', label: 'Working Knowledge' },
-  { name: 'Linux', label: 'Working Knowledge' },
+export const fullStackAiSkills: Skill[] = [
+  { name: 'Schema design, ACID transactions, real-time subscriptions', tool: 'Convex' },
+  { name: 'LLM agent orchestration and tool calling', tool: 'Mastra' },
+  { name: 'LLM API integration', tool: 'OpenRouter' },
+  { name: 'AI-assisted development', tool: 'Cursor, Claude' },
 ];

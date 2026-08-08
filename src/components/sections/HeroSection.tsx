@@ -24,15 +24,25 @@ export const HeroSection = () => {
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
               <span className="text-emphasis font-bold uppercase tracking-widest text-body-sm block mb-4 border-l-4 border-emphasis pl-4">
-                Available for projects
+                Open to Work
               </span>
               <h1 className="text-size-heading-xl text-primary leading-tight mb-6">
                 Hi, I&apos;m <span className="text-emphasis">Sara</span>.<br />
                 I build clean, <span className="italic text-secondary">type-safe</span> web apps.
               </h1>
-              <p className="text-text-muted text-size-body-lg mb-10 max-w-xl leading-relaxed">
-                Vancouver-based developer with a frontend focus in React and TypeScript, expanding into full-stack with tools like Next.js and Convex.
+              <p className="text-text-muted text-size-body-lg mb-6 max-w-xl leading-relaxed">
+                Vancouver-based developer.
+                Frontend-first in React and TypeScript. Shipping full-stack apps with Next.js, REST APIs, and a real-time database with ACID transactions.
               </p>
+              <div className="mb-10 max-w-xl space-y-2 text-size-body-sm text-text-muted">
+                <p>
+                  <span className="font-bold uppercase tracking-widest block mb-1">
+                    Spoken languages
+                  </span>
+                  Italian (native) · English (fluent)
+                </p>
+                <p className='italic'>Legally entitled to work in Canada</p>
+              </div>
             </motion.div>
 
             <motion.div
@@ -78,8 +88,9 @@ export const HeroSection = () => {
               <div className="absolute inset-0 bg-accent/20 rounded-3xl rotate-3 z-0 border-2 border-accent/20" aria-hidden />
               <div className="relative z-10 w-full h-full bg-white rounded-3xl overflow-hidden shadow-2xl border-4 border-white flex items-center justify-center">
                   <img 
-                    src='/media/mephoto.jpg' 
-                    alt="Sara's portrait"          
+                    src='/media/MyAvatar.webp' 
+                    alt="Sara's portrait"  
+                    className='aspect-square object-cover'        
                   />     
                
                 <div className="absolute top-8 right-8 bg-white/90 backdrop-blur-sm p-3 rounded-xl shadow-lg border border-primary/5 flex items-center gap-3">
